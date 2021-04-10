@@ -11,5 +11,5 @@ test:
 run:
 		python main.py
 
-lint:
+lint: # noqa
 		flake8 hello_world test
