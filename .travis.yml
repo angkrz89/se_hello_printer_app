@@ -5,6 +5,9 @@ python:
 
 install:
   - make deps
-  
+
 script:
   - make test
+
+linter:
+  - make linter
