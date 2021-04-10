@@ -9,5 +9,5 @@ install:
 script:
   - make test
 
-linter:
-  - make linter
+lint:
+  - make lint
