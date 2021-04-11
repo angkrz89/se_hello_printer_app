@@ -26,7 +26,7 @@ class FlaskrTestCase(unittest.TestCase):
         # Tworzenie XML
         greetings = ET.Element("greetings")
         name = ET.SubElement(greetings, "imie")
-        name.text = "Szymon"
+        name.text = "Angelika"
         message = ET.SubElement(greetings, "msg")
         message.text = "Hello World!"
 
@@ -34,6 +34,6 @@ class FlaskrTestCase(unittest.TestCase):
 
         # Wczytanie XMLa z aplikacji
         rv = self.app.get('/?output=xml')
-
+        
         # Test
         self.assertEqual(test_xml, rv.data)
