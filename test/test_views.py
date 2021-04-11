@@ -16,17 +16,17 @@ class FlaskrTestCase(unittest.TestCase):
         ','.join(SUPPORTED) in s
 
     def test_msg_with_output(self):
-        test_data={"imie": "Angelika", "msg": "Hello World!"}
+        test_data = {"imie": "Szymon", "msg": "Hello World!"}
         rv = self.app.get('/?output=json')
         js = json.loads(rv.data)
-        self.assertEqual(test_data['msg']), js['msg'])
-        self.assertEqual(test_data['imie']), js['imie'])
+        self.assertEqual(test_data['msg'], js['msg'])
+        self.assertEqual(test_data['imie'], js['imie'])
 
     def test_msg_with_xml_output(self):
         # Tworzenie XML
         greetings = ET.Element("greetings")
         name = ET.SubElement(greetings, "imie")
-        name.text = "Angelika"
+        name.text = "Szymon"
         message = ET.SubElement(greetings, "msg")
         message.text = "Hello World!"
 
@@ -34,6 +34,6 @@ class FlaskrTestCase(unittest.TestCase):
 
         # Wczytanie XMLa z aplikacji
         rv = self.app.get('/?output=xml')
-        
+
         # Test
         self.assertEqual(test_xml, rv.data)
