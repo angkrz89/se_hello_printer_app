@@ -21,4 +21,5 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_xml_output(self):
         rv = self.app.get('/?output=xml')
-        self.assertEqual(b'<imie>Angelika</imie><msg>Hello World</msg>', rv.data)
+        self.assertEqual(b'<imie>Angelika</imie><msg>Hello World</msg>',
+        rv.data)
