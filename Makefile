@@ -1,26 +1,26 @@
 .PHONY: test
 
 deps:
-		pip install -r requirements.txt; \
-		pip install -r test_requirements.txt
+			pip install -r requirements.txt; \
+			pip install -r test_requirements.txt
 
 test:
-	  PYTHONPATH=. py.test --verbose -s
+	  	PYTHONPATH=. py.test --verbose -s
 
 run:
-		python main.py
+			python main.py
 
 lint:
-		flake8 hello_world test
+			flake8 hello_world test
 
 docker_build:
-		docker build -t hello-world-printer .
+			docker build -t hello-world-printer .
 
 docker_run: docker_build
-		docker run \
-			--name hello-world-printer-dev \
-				-p 5000:5000 \
-				-d hello-world-printer
+			docker run \
+				--name hello-world-printer-dev \
+					-p 5000:5000 \
+					-d hello-world-printer
 
 USERNAME=angkrz89
 TAG=$(USERNAME)/hello-world-printer
