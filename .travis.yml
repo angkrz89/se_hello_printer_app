@@ -14,5 +14,5 @@ script:
 
 deploy:
   provider: heroku
-  app: intense-oasis-43896
+  app: angkrz1
   api_key: ${HEROKU_API_KEY}
