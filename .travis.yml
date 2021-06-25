@@ -9,14 +9,10 @@ install:
 script:
   - make lint
   - make test
-  - |
-    set +x
-    echo ${DOCKER_PASSWORD} | docker --login=angkrz89 --password-stdin
-    set -x
   - make docker_build
   - make docker_push
 
 deploy:
-provider: heroku
-app: intense-oasis-43896
- api_key: ${HEROKU_API_KEY}
+  provider: heroku
+  app: intense-oasis-43896
+  api_key: ${HEROKU_API_KEY}
