@@ -9,5 +9,9 @@ install:
 script:
   - make lint
   - make test
+  - |
+    set +x
+    echo ${DOCKER_PASSWORD} | docker --login=angkrz89 --password-stdin
+    set -x
   - make docker_build
   - make docker_push
