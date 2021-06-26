@@ -32,6 +32,8 @@ docker_push: docker_build
 			docker push $(TAG); \
 			docker logout;
 
-test_cov
+make test_cov:
+			test_cov
 
-test_xunit
+make test_xunit:
+			test_xunit
