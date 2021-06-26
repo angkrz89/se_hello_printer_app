@@ -31,3 +31,7 @@ docker_push: docker_build
 			docker tag hello-world-printer $(TAG); \
 			docker push $(TAG); \
 			docker logout;
+
+test_cov
+
+test_xunit
