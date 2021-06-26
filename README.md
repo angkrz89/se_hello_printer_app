@@ -1,5 +1,8 @@
 # Simple Flask App
 
+[![Build Status](https://www.travis-ci.com/angkrz89/se_hello_printer_app.svg?branch=master)](https://www.travis-ci.com/angkrz89/se_hello_printer_app)
+[![StstusCake Logo](https://app.statuscake.com/button/index.php?Track=6012046&Days=1&Design=4)](https://app.statuscake.com/UptimeStatus.php?tid=6012046)
+
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
@@ -84,6 +87,3 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ yum install -y docker-ce
   $ systemctl start docker
   ```
-[![Build Status](https://www.travis-ci.com/angkrz89/se_hello_printer_app.svg?branch=master)](https://www.travis-ci.com/angkrz89/se_hello_printer_app)
-
-  https://app.statuscake.com/button/index.php?Track=6012046&Days=1&Design=4
