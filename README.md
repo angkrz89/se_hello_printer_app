@@ -85,3 +85,5 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ systemctl start docker
   ```
 [![Build Status](https://www.travis-ci.com/angkrz89/se_hello_printer_app.svg?branch=master)](https://www.travis-ci.com/angkrz89/se_hello_printer_app)
+
+[![Build Status](https://app.statuscake.com/button/index.php?Track=6012046&Days=1&Design=5)]
