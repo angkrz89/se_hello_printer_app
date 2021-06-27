@@ -19,7 +19,7 @@ pipeline {
                   failed(failureThreshold: '1')
                   ],
                   tools: [
-                      xunit(deleteOutputFiles: true,
+                      JUnit(deleteOutputFiles: true,
                             failIfNotNew: true,
                             pattern: 'test_results.xml',
                             skipNoTestFiles: false,
