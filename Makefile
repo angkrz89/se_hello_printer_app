@@ -23,6 +23,8 @@ fmt:
 
 lint:
 			flake8 hello_world test
+
+lint_check:
 			black --check hello_world test
 
 docker_build:
