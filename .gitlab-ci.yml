@@ -8,6 +8,7 @@ test:
   script:
     - make deps
     - make test_cov
+    - make lint_check
 docker:
   image: docker:stable
   services:

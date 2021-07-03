@@ -8,6 +8,7 @@ install:
 
 script:
   - make lint
+  - make lint_check
   - make test
   - make docker_build
   - make docker_push
