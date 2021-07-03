@@ -18,6 +18,9 @@ test_xunit:
 run:
 			python main.py
 
+fmt:
+			black hello_world test
+
 lint:
 			flake8 hello_world test
 			black --check hello_world test
